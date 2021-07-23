@@ -1,3 +1,25 @@
 div:hover {
-    border: 5px solid rebeccapurple;
+  border: 5px solid rebeccapurple;
+}
+
+/* Utilizei como fonte de pesquisa o site: 
+https://www.maujor.com/tutorial/guia-definitivo-das-pseudoclasses-e-pseudoelementos-css.php#nth-of-type */
+div:nth-of-type(1) {
+  background-color: orange;
+}
+
+div:nth-of-type(2) {
+  background-color: yellow;
+}
+
+div:nth-of-type(3) {
+  background-color: yellowgreen;
+}
+
+div:nth-of-type(4) {
+  background-color: darkgoldenrod;
+}
+
+div:nth-of-type(5) {
+  background-color: lightskyblue;
 }
