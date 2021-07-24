@@ -35,3 +35,29 @@ li {
 li em {
     font-weight: bold;
 }
+
+.boldtext:hover {
+    font-weight: bold;
+}
+
+/* Usei como fonte de pesquisa o site abaixo para aprofundar melhor meu conhecimento do seletor X[href="foo"]
+https://code.tutsplus.com/pt/tutorials/the-30-css-selectors-you-must-memorize--net-16048 */
+a[href="https://pt.stackoverflow.com/"]:hover {
+    color: orange;
+}
+
+a[href="https://www.w3schools.com/"]:hover {
+    color: green;
+}
+
+a[href="https://developer.mozilla.org/pt-BR/"]:hover {
+    color: black;
+}
+
+a[href="https://devdocs.io/"]:hover {
+    color: yellow;
+}
+
+a[href="https://app.betrybe.com/"]:hover {
+    color: green;
+}
