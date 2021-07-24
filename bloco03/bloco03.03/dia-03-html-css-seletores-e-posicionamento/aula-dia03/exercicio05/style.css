@@ -19,3 +19,11 @@ ol li:nth-of-type(even) {
 ol li:nth-of-type(odd) {
     text-transform: uppercase;
 }
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bold;
+}
