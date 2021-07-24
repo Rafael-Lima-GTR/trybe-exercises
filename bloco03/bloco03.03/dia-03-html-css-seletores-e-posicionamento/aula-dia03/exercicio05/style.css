@@ -8,6 +8,14 @@ h1.redtext {
     color: red;
 }
 
+.bluetext {
+    color: blue;
+}
+
+.pinkbackground {
+    background-color: pink;
+}
+
 ol li {
     background-color: yellow;
 }
