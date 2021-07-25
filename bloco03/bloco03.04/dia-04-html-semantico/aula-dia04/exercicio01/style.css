@@ -29,6 +29,10 @@ h3 {
   width: 300px;
 }
 
+ul {
+    text-align: center;
+}
+
 li {
   list-style: none;
   display: inline-block;
