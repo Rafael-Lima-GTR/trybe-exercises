@@ -14,3 +14,9 @@ console.log(typeof patientAge);
 
 patienteId = '50';
 console.log(typeof patienteId);
+
+let base = 5;
+let altura = 8;
+
+let area = base * altura;
+console.log('A área do triângulo é ' + area);
