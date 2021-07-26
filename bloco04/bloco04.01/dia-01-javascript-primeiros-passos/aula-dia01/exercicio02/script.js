@@ -20,3 +20,5 @@ let altura = 8;
 
 let area = base * altura;
 console.log('A área do triângulo é ' + area);
+let perimetro = (base * 2) + (altura * 2);
+console.log('O perímetro do triângulo é ' + perimetro);
