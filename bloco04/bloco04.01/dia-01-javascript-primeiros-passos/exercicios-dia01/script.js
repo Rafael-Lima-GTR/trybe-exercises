@@ -111,20 +111,31 @@
 // }
 
 //Programa 07
-let porcentagem = 200;
+// let porcentagem = 200;
 
-if (porcentagem >= 90 && porcentagem <= 100) {
-    console.log('A');
-} else if (porcentagem >= 80 && porcentagem <= 89) {
-    console.log('B');
-} else if (porcentagem >= 70 && porcentagem <= 79) {
-    console.log('C');
-} else if (porcentagem >= 60 && porcentagem <= 69) {
-    console.log('D');
-} else if (porcentagem >= 50 && porcentagem <= 59) {
-    console.log('E');
-} else if (porcentagem < 50 && porcentagem >= 0) {
-    console.log('F');
-} else if (porcentagem > 100 || porcentagem < 0) {
-    console.log('Nota Inválida!')
+// if (porcentagem >= 90 && porcentagem <= 100) {
+//     console.log('A');
+// } else if (porcentagem >= 80 && porcentagem <= 89) {
+//     console.log('B');
+// } else if (porcentagem >= 70 && porcentagem <= 79) {
+//     console.log('C');
+// } else if (porcentagem >= 60 && porcentagem <= 69) {
+//     console.log('D');
+// } else if (porcentagem >= 50 && porcentagem <= 59) {
+//     console.log('E');
+// } else if (porcentagem < 50 && porcentagem >= 0) {
+//     console.log('F');
+// } else if (porcentagem > 100 || porcentagem < 0) {
+//     console.log('Nota Inválida!')
+// }
+
+//Programa 08
+let numero01 = 3;
+let numero02 = 2;
+let numero03 = 11;
+
+if ((numero01 % 2 === 0) || (numero02 % 2 === 0) || (numero03 % 2 === 0)){
+    console.log(true);
+} else {
+    console.log(false);
 }
