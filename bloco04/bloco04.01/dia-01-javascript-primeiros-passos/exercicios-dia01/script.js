@@ -75,38 +75,56 @@
 // }
 
 // Programa 06
+// let pecaDeXadrez = 'tcasa';
 
-let pecaDeXadrez = 'tcasa';
+// switch (pecaDeXadrez.toLowerCase()) {
+//     case 'rei':
+//         console.log( 'Rei -> horizontal, vertical e diagonal somente uma casa de cada vez.');
+//         break;
 
-switch (pecaDeXadrez.toLowerCase()) {
-    case 'rei':
-        console.log( 'Rei -> horizontal, vertical e diagonal somente uma casa de cada vez.');
-        break;
+//     case 'rainha':
+//         console.log('Rainha -> ao longo da horizontal, vertical e diagonais mas não pode pular outras peças.');
+//         break;
 
-    case 'rainha':
-        console.log('Rainha -> ao longo da horizontal, vertical e diagonais mas não pode pular outras peças.');
-        break;
+//     case 'bispo':
+//         console.log('Bispo -> ao longo das diagonais mas não pode pular outras peças.');
+//         break;
 
-    case 'bispo':
-        console.log('Bispo -> ao longo das diagonais mas não pode pular outras peças.');
-        break;
+//     case 'cavalo':
+//         console.log('Cavalo -> forma de “L”, quer dizer, duas casas em sentido horizontal e ' +
+//             'mais uma na vertical ou vice-versa. Única peça que pode pular as outras.');
+//         break;
 
-    case 'cavalo':
-        console.log('Cavalo -> forma de “L”, quer dizer, duas casas em sentido horizontal e ' +
-            'mais uma na vertical ou vice-versa. Única peça que pode pular as outras.');
-        break;
+//     case 'torre':
+//         console.log('Torre -> vertical ou horizontal, mas não pode pular outras peças.');
+//         break;
 
-    case 'torre':
-        console.log('Torre -> vertical ou horizontal, mas não pode pular outras peças.');
-        break;
+//     case 'peão':
+//         console.log('Peão -> uma casa para frente e somente captura outras peças na diagonal.' +
+//             'Opcionalmente, cada peão pode avançar duas casas no seu primeiro movimento do jogo.'
+//         );
+//         break;
 
-    case 'peão':
-        console.log('Peão -> uma casa para frente e somente captura outras peças na diagonal.' +
-            'Opcionalmente, cada peão pode avançar duas casas no seu primeiro movimento do jogo.'
-        );
-        break;
-    
-    default:
-        console.log('Erro, peça inválida');
-        break;
+//     default:
+//         console.log('Erro, peça inválida');
+//         break;
+// }
+
+//Programa 07
+let porcentagem = 200;
+
+if (porcentagem >= 90 && porcentagem <= 100) {
+    console.log('A');
+} else if (porcentagem >= 80 && porcentagem <= 89) {
+    console.log('B');
+} else if (porcentagem >= 70 && porcentagem <= 79) {
+    console.log('C');
+} else if (porcentagem >= 60 && porcentagem <= 69) {
+    console.log('D');
+} else if (porcentagem >= 50 && porcentagem <= 59) {
+    console.log('E');
+} else if (porcentagem < 50 && porcentagem >= 0) {
+    console.log('F');
+} else if (porcentagem > 100 || porcentagem < 0) {
+    console.log('Nota Inválida!')
 }
