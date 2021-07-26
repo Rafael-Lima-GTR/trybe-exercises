@@ -130,12 +130,24 @@
 // }
 
 //Programa 08
-let numero01 = 3;
-let numero02 = 2;
-let numero03 = 11;
+// let numero01 = 3;
+// let numero02 = 2;
+// let numero03 = 11;
 
-if ((numero01 % 2 === 0) || (numero02 % 2 === 0) || (numero03 % 2 === 0)){
-    console.log(true);
-} else {
-    console.log(false);
+// if ((numero01 % 2 === 0) || (numero02 % 2 === 0) || (numero03 % 2 === 0)){
+//     console.log(true);
+// } else {
+//     console.log(false);
+// }
+
+// Programa 09
+let numero01 = 40;
+let numero02 = 28;
+let numero03 = 1164;
+
+let numeroImpar = false;
+
+if ((numero01 % 2 !== 0) || (numero02 % 2 !== 0) || (numero03 % 2 !== 0)){
+    numeroImpar = true;
 }
+console.log(numeroImpar);
