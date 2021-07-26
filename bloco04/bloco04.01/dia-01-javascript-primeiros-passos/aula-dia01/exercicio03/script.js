@@ -1,5 +1,8 @@
 let nota = 80;
 
+// nota = 55;
+// nota = 75;
+
 if( nota >= 80){
     console.log("Parabéns, você foi aprovada(o)!!!");
 } 
