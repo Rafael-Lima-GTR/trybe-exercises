@@ -4,6 +4,12 @@
 
 // let adicao = a + b;
 // let subtracao = a - b;
+// let multiplicacao = a * b;// Programa 01
+// let a = 13;
+// let b = 9;
+
+// let adicao = a + b;
+// let subtracao = a - b;
 // let multiplicacao = a * b;
 // let divisao = a / b;
 // let modulo = a % b;
@@ -37,16 +43,33 @@
 //     console.log('O número ' + c + ' é maior que os números ' + a + ' e ' + b + '.');
 // }
 
-//Programa 04
-let numTestado = 33;
+// //Programa 04
+// let numTestado = 33;
 
-if (Math.sign(numTestado) > 0) {
-    console.log('O valor ' + numTestado + " é um número positivo.");
-  } else if (Math.sign(numTestado) < 0) {
-    console.log('O valor ' + numTestado + " é um número negativo.");
-  } else if (Math.sign(numTestado) === 0  || Math.sign(numTestado) === -0){
-    console.log('O valor ' + numTestado + " é igual à zero.");
-  } else {
-    console.log('O valor ' + numTestado + " não é um número válido.");
-  };
+// if (Math.sign(numTestado) > 0) {
+//     console.log('O valor ' + numTestado + " é um número positivo.");
+// } else if (Math.sign(numTestado) < 0) {
+//     console.log('O valor ' + numTestado + " é um número negativo.");
+// } else if (Math.sign(numTestado) === 0 || Math.sign(numTestado) === -0) {
+//     console.log('O valor ' + numTestado + " é igual à zero.");
+// } else {
+//     console.log('O valor ' + numTestado + " não é um número válido.");
+// };
 
+//Programa 05
+let primeiroAngulo = 150;
+let segundoAngulo = 15;
+let terceiroAngulo = 30;
+
+let valorTotalDosAngulos = primeiroAngulo + segundoAngulo + terceiroAngulo;
+
+if (primeiroAngulo > 0 && segundoAngulo > 0 && terceiroAngulo > 0) {
+
+    if (valorTotalDosAngulos === 180) {
+        console.log(true);
+    } else {
+        console.log(false);
+    }
+} else {
+    console.log('Erro de ângulo inválido');
+}
