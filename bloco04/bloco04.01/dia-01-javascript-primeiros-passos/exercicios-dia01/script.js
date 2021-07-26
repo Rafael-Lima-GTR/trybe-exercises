@@ -25,14 +25,28 @@
 // }
 
 //Programa 03
-let a = 34;
-let b = 98;
-let c = 59;
+// let a = 34;
+// let b = 98;
+// let c = 59;
 
-if (a > b && a > c) {
-    console.log('O número ' + a + ' é maior que os números ' + b + ' e ' + c + '.');
-} else if (b > a && b > c) {
-    console.log('O número ' + b + ' é maior que os números ' + a + ' e ' + c + '.');
-} else {
-    console.log('O número ' + c + ' é maior que os números ' + a + ' e ' + b + '.');
-}
+// if (a > b && a > c) {
+//     console.log('O número ' + a + ' é maior que os números ' + b + ' e ' + c + '.');
+// } else if (b > a && b > c) {
+//     console.log('O número ' + b + ' é maior que os números ' + a + ' e ' + c + '.');
+// } else {
+//     console.log('O número ' + c + ' é maior que os números ' + a + ' e ' + b + '.');
+// }
+
+//Programa 04
+let numTestado = 33;
+
+if (Math.sign(numTestado) > 0) {
+    console.log('O valor ' + numTestado + " é um número positivo.");
+  } else if (Math.sign(numTestado) < 0) {
+    console.log('O valor ' + numTestado + " é um número negativo.");
+  } else if (Math.sign(numTestado) === 0  || Math.sign(numTestado) === -0){
+    console.log('O valor ' + numTestado + " é igual à zero.");
+  } else {
+    console.log('O valor ' + numTestado + " não é um número válido.");
+  };
+
