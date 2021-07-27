@@ -141,13 +141,37 @@
 // }
 
 // Programa 09
-let numero01 = 40;
-let numero02 = 28;
-let numero03 = 1164;
+// let numero01 = 40;
+// let numero02 = 28;
+// let numero03 = 1164;
 
-let numeroImpar = false;
+// let numeroImpar = false;
 
-if ((numero01 % 2 !== 0) || (numero02 % 2 !== 0) || (numero03 % 2 !== 0)){
-    numeroImpar = true;
-}
-console.log(numeroImpar);
+// if ((numero01 % 2 !== 0) || (numero02 % 2 !== 0) || (numero03 % 2 !== 0)){
+//     numeroImpar = true;
+// }
+// console.log(numeroImpar);
+
+// Programa 10
+
+// let custoDoProduto = 10;
+// let valorDeVenda = 30;
+
+// if (custoDoProduto <= 0 || valorDeVenda <= 0) {
+//     console.log('Valor inválido!');
+// } else {
+//     let valorCustoTotal = custoDoProduto + (custoDoProduto * 0.2);
+//     let lucro = (valorDeVenda - valorCustoTotal) * 1000;
+//     console.log('O lucro  que a empresa terá ao vender mil desses produtos será de R$' + lucro);
+// }
+
+let costOfProduct = 10;
+let saleValue = 30;
+
+if (costOfProduct >= 0 && saleValue >= 0) {
+  let totalCostOfProduct = costOfProduct * 1.2;
+  let totalProfit = (saleValue - totalCostOfProduct) * 1000;
+  console.log(totalProfit);
+} else {
+  console.log("Error, os valores não podem ser negativos");
+};
