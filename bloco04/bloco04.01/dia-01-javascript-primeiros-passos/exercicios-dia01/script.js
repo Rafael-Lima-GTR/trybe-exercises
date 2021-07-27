@@ -153,7 +153,6 @@
 // console.log(numeroImpar);
 
 // Programa 10
-
 // let custoDoProduto = 10;
 // let valorDeVenda = 30;
 
@@ -166,7 +165,6 @@
 // }
 
 // Programa 11
-
 let aliquotaINSS;
 let aliquotaIR;
 
