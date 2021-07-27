@@ -37,16 +37,50 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // }
 
 // 05 - Utilizando for , descubra qual o maior valor contido no array e imprima-o;
-let higherNumber = 0;
-for (let number of numbers){
-    if(number > higherNumber){
-        higherNumber = number;
-    }
-}
+// let higherNumber = 0;
+// for (let number of numbers){
+//     if(number > higherNumber){
+//         higherNumber = number;
+//     }
+// }
 
-console.log(higherNumber);
+// console.log(higherNumber);
 
 // 06 - Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: "nenhum valor ímpar encontrado";
-// 07 - Utilizando for , descubra qual o menor valor contido no array e imprima-o;
+// let oddAmount = 0;
+// for (let number of numbers) {
+//     if ((number % 2) > 0) {
+//         oddAmount += 1;
+//     }
+// }
+
+// if (oddAmount > 0) {
+//     console.log(oddAmount);
+// } else {
+//     console.log('nenhum valor ímpar encontrado');
+// }
+
+// // 07 - Utilizando for , descubra qual o menor valor contido no array e imprima-o;
+// let smallestNumber = numbers[0];
+
+// for (let number of numbers) {
+//     if (number <= smallestNumber) {
+//         smallestNumber = number;
+//     }
+// }
+
+// console.log(smallestNumber);
+
+
 // 08 - Utilizando for , crie um array que vá de 1 até 25 e imprima o resultado;
-// 09 -Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2 .
+let exercicioArray = [];
+
+for (index = 0; index < 25; index += 1) {
+    exercicioArray.push(exercicioArray.length + 1);
+}
+
+console.log(exercicioArray);
+// 09 -Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2.
+for(let divisao of exercicioArray){
+    console.log(divisao/2);
+}
