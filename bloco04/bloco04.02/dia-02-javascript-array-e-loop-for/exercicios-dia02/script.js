@@ -73,15 +73,41 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 
 // 08 - Utilizando for , crie um array que vá de 1 até 25 e imprima o resultado;
-let exercicioArray = [];
+// let exercicioArray = [];
 
-for (index = 0; index < 25; index += 1) {
-    exercicioArray.push(exercicioArray.length + 1);
-}
+// for (index = 0; index < 25; index += 1) {
+//     exercicioArray.push(exercicioArray.length + 1);
+// }
 
-console.log(exercicioArray);
+// console.log(exercicioArray);
 
-// 09 -Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2.
-for(let divisao of exercicioArray){
-    console.log(divisao/2);
-}
+// // 09 -Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2.
+// for(let divisao of exercicioArray){
+//     console.log(divisao/2);
+// }
+
+// Bonus 01 - Ordene o array numbers em ordem crescente e imprima seus valores;
+for (let index = 1; index < numbers.length; index += 1) {
+    for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+      if (numbers[index] < numbers[secondIndex]) {
+        let position = numbers[index];
+        numbers[index] = numbers[secondIndex];
+        numbers[secondIndex] = position;
+      }
+    }
+  }
+
+  console.log(numbers);
+
+// Bonus 02 - Ordene o array numbers em ordem decrescente e imprima seus valores;
+  for (let index = 1; index < numbers.length; index += 1) {
+    for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+      if (numbers[index] > numbers[secondIndex]) {
+        let position = numbers[index];
+        numbers[index] = numbers[secondIndex];
+        numbers[secondIndex] = position;
+      }
+    }
+  }
+
+  console.log(numbers);
