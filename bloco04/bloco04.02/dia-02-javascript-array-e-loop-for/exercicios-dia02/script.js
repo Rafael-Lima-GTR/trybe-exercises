@@ -13,17 +13,40 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // console.log(sumNumbers);
 
-// 03 - Para o terceiro exercício, calcule e imprima a média aritmética dos valores contidos no array;
-let sumNumbers = 0;
-for (let number of numbers) {
-    sumNumbers += number;    
+// // 03 - Para o terceiro exercício, calcule e imprima a média aritmética dos valores contidos no array;
+// let sumNumbers = 0;
+// for (let number of numbers) {
+//     sumNumbers += number;    
+// }
+
+// console.log(sumNumbers/(numbers.length));
+
+// // 04 - Com o mesmo código do exercício anterior, caso o valor final seja maior que 20, imprima a mensagem:
+// // "valor maior que 20". Caso não seja, imprima a mensagem: "valor menor ou igual a 20";
+// let sumNumbers = 0;
+// for (let number of numbers) {
+//     sumNumbers += number;    
+// }
+
+// let media = sumNumbers/(numbers.length);
+
+// if(media > 20) {
+//     console.log('valor maior que 20');
+// } else{
+//     console.log('valor meno ou igual 20');
+// }
+
+// 05 - Utilizando for , descubra qual o maior valor contido no array e imprima-o;
+let higherNumber = 0;
+for (let number of numbers){
+    if(number > higherNumber){
+        higherNumber = number;
+    }
 }
 
-console.log(sumNumbers/(numbers.length));
-// 04 -A média aritmética é o resultado da soma de todos os elementos divido pelo número total de elementos.
-// 05 - Com o mesmo código do exercício anterior, caso o valor final seja maior que 20, imprima a mensagem: "valor maior que 20". Caso não seja, imprima a mensagem: "valor menor ou igual a 20";
-// 06 - Utilizando for , descubra qual o maior valor contido no array e imprima-o;
-// 07 - Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: "nenhum valor ímpar encontrado";
-// 08 - Utilizando for , descubra qual o menor valor contido no array e imprima-o;
-// 09 - Utilizando for , crie um array que vá de 1 até 25 e imprima o resultado;
-// 10 -Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2 .
+console.log(higherNumber);
+
+// 06 - Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: "nenhum valor ímpar encontrado";
+// 07 - Utilizando for , descubra qual o menor valor contido no array e imprima-o;
+// 08 - Utilizando for , crie um array que vá de 1 até 25 e imprima o resultado;
+// 09 -Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2 .
