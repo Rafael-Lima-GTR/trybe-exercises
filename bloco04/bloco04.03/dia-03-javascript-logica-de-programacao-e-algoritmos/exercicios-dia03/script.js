@@ -70,22 +70,39 @@
 //   controlLeft -= 1
 // };
 
-// 5- Faça uma pirâmide com n asteriscos de base que seja vazia no meio. Assuma que o valor de n será sempre ímpar:
-let n = 7;
-let middle = (n + 1) / 2;
-let controlLeft = middle;
-let controlRight = middle;
-let symbol = '*';
-for (let line = 1; line <= middle; line += 1) {
-  let outputLine = '';
-  for (let col = 1; col <= n; col += 1) {
-    if (col == controlLeft || col == controlRight || line == middle) {
-      outputLine += symbol;
-    } else {
-      outputLine += ' ';
+// // 5- Faça uma pirâmide com n asteriscos de base que seja vazia no meio. Assuma que o valor de n será sempre ímpar:
+// let n = 7;
+// let middle = (n + 1) / 2;
+// let controlLeft = middle;
+// let controlRight = middle;
+// let symbol = '*';
+// for (let line = 1; line <= middle; line += 1) {
+//   let outputLine = '';
+//   for (let col = 1; col <= n; col += 1) {
+//     if (col == controlLeft || col == controlRight || line == middle) {
+//       outputLine += symbol;
+//     } else {
+//       outputLine += ' ';
+//     }
+//   }
+//   controlLeft -= 1;
+//   controlRight += 1;
+//   console.log(outputLine);
+// }
+
+// 6- Faça um programa que diz se um número definido numa variável é primo ou não.
+let numberTest = 15;
+let divisors = 0;
+
+for (let index = 0; index <= 41; index += 1) {
+
+    if ((numberTest % index) === 0) {
+        divisors += 1;
     }
-  }
-  controlLeft -= 1;
-  controlRight += 1;
-  console.log(outputLine);
+}
+
+if (divisors === 2) {
+    console.log(numberTest + ' é um número primo!');
+} else {
+    console.log(numberTest + ' não é um número primo!')
 }
