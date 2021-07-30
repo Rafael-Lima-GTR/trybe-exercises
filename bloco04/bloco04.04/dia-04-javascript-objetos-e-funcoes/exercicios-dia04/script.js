@@ -43,17 +43,36 @@ info['recorrente'] = 'Sim';
 // }
 
 // Parte II - Funções
-// 1 - Crie uma função que receba uma string e retorne true se for um palíndromo , ou false , se não for.
-let stringWord = 'arara'
+// // 1 - Crie uma função que receba uma string e retorne true se for um palíndromo , ou false , se não for.
+// let stringWord = 'arara'
 
-function palindromoTest(stringWord) {
-    const reverseString = stringWord.split('').reverse().join('');
-    if (reverseString === stringWord) {
-        return true;
-    } else {
-        return false;
+// function palindromoTest(stringWord) {
+//     const reverseString = stringWord.split('').reverse().join('');
+//     if (reverseString === stringWord) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+// console.log(palindromoTest(stringWord));
+// console.log(palindromoTest('desenvolvimento'));
+
+// 2 - Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
+let arrayTeste = [2, 3, 6, 7, 10, 1];
+
+function maiorNumero(arrayTeste){
+    
+    let higherNumber = 0;
+    for (let index in arrayTeste){
+        if (arrayTeste[higherNumber] < arrayTeste[index]){
+             higherNumber = index;
+    
+        }    
     }
+
+    return higherNumber;
 }
 
-console.log(palindromoTest(stringWord));
-console.log(palindromoTest('desenvolvimento'));
+console.log(maiorNumero(arrayTeste));
+
