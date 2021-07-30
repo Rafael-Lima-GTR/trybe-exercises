@@ -58,21 +58,39 @@ info['recorrente'] = 'Sim';
 // console.log(palindromoTest(stringWord));
 // console.log(palindromoTest('desenvolvimento'));
 
-// 2 - Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
-let arrayTeste = [2, 3, 6, 7, 10, 1];
+// // 2 - Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
+// let arrayTeste = [2, 3, 6, 7, 10, 1];
 
-function maiorNumero(arrayTeste){
+// function maiorNumero(arrayTeste){
     
-    let higherNumber = 0;
+//     let higherNumber = 0;
+//     for (let index in arrayTeste){
+//         if (arrayTeste[higherNumber] < arrayTeste[index]){
+//              higherNumber = index;    
+//         }    
+//     }
+
+//     return higherNumber;
+// }
+
+// console.log(maiorNumero(arrayTeste));
+
+
+// 3- Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+
+let arrayTeste = [2, 4, 6, 7, 10, 0, -3];
+
+function menorNumero(arrayTeste){
+    
+    let smallerNumber = 0;
     for (let index in arrayTeste){
-        if (arrayTeste[higherNumber] < arrayTeste[index]){
-             higherNumber = index;
-    
+        if (arrayTeste[smallerNumber] > arrayTeste[index]){
+             smallerNumber = index;    
         }    
     }
 
-    return higherNumber;
+    return smallerNumber;
 }
 
-console.log(maiorNumero(arrayTeste));
+console.log(menorNumero(arrayTeste));
 
