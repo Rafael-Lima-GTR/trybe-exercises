@@ -76,21 +76,37 @@ info['recorrente'] = 'Sim';
 // console.log(maiorNumero(arrayTeste));
 
 
-// 3- Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+// // 3- Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
 
-let arrayTeste = [2, 4, 6, 7, 10, 0, -3];
+// let arrayTeste = [2, 4, 6, 7, 10, 0, -3];
 
-function menorNumero(arrayTeste){
+// function menorNumero(arrayTeste){
     
-    let smallerNumber = 0;
+//     let smallerNumber = 0;
+//     for (let index in arrayTeste){
+//         if (arrayTeste[smallerNumber] > arrayTeste[index]){
+//              smallerNumber = index;    
+//         }    
+//     }
+
+//     return smallerNumber;
+// }
+
+// console.log(menorNumero(arrayTeste));
+
+// 4 - Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.
+let arrayTeste = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+
+function maiorCaracter(arrayTeste){
+    
+    let higherCaracterNumber = 0;
     for (let index in arrayTeste){
-        if (arrayTeste[smallerNumber] > arrayTeste[index]){
-             smallerNumber = index;    
+        if (arrayTeste[higherCaracterNumber].length < arrayTeste[index].length){
+             higherCaracterNumber = index;    
         }    
     }
 
-    return smallerNumber;
+    return arrayTeste[higherCaracterNumber];
 }
 
-console.log(menorNumero(arrayTeste));
-
+console.log(maiorCaracter(arrayTeste));
