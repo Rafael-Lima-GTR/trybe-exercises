@@ -111,28 +111,44 @@ info['recorrente'] = 'Sim';
 
 // console.log(maiorCaracter(arrayTeste));
 
-// 5 - Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
-let arrayTeste = [2, 3, 2, 5, 8, 2, 3];
+// // 5 - Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
+// let arrayTeste = [2, 3, 2, 5, 8, 2, 3];
 
-function maisRepetido(numeros) {
-    
-    let contRepetido = 0;
-    let contNumero = 0;
-    let indexNumeroRepetido = 0;
-    for (let index in numeros) {
-        let verificaNumero = numeros[index];
-        for (let index2 in numeros) {
-            if (verificaNumero === numeros[index2]) {
-                contNumero += 1;
-            }
-        }
-        if (contNumero > contRepetido) {
-            contRepetido = contNumero;
-            indexNumeroRepetido = index;
-        }
-        contNumero = 0;
+// function maisRepetido(numeros) {
+
+//     let contRepetido = 0;
+//     let contNumero = 0;
+//     let indexNumeroRepetido = 0;
+//     for (let index in numeros) {
+//         let verificaNumero = numeros[index];
+//         for (let index2 in numeros) {
+//             if (verificaNumero === numeros[index2]) {
+//                 contNumero += 1;
+//             }
+//         }
+//         if (contNumero > contRepetido) {
+//             contRepetido = contNumero;
+//             indexNumeroRepetido = index;
+//         }
+//         contNumero = 0;
+//     }
+//     return numeros[indexNumeroRepetido];
+// }
+
+// console.log(maisRepetido(arrayTeste));
+
+// 6 - Crie uma função que receba um número inteiro N e retorne o
+// somatório de todos os números de 1 até N.
+let number = 5;
+
+function factorNumber(number){
+
+    let factorSum = 0
+    for(index = 1; index <= number; index += 1){
+         factorSum += index; 
     }
-    return numeros[indexNumeroRepetido];
+
+    return factorSum;
 }
 
-console.log(maisRepetido(arrayTeste));
+console.log(factorNumber(5));
