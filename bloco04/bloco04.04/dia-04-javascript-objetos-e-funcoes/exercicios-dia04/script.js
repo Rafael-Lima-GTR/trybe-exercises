@@ -137,18 +137,43 @@ info['recorrente'] = 'Sim';
 
 // console.log(maisRepetido(arrayTeste));
 
-// 6 - Crie uma função que receba um número inteiro N e retorne o
-// somatório de todos os números de 1 até N.
-let number = 5;
+// // 6 - Crie uma função que receba um número inteiro N e retorne o
+// // somatório de todos os números de 1 até N.
+// let number = 5;
 
-function factorNumber(number){
+// function factorSumNumber(number){
 
-    let factorSum = 0
-    for(index = 1; index <= number; index += 1){
-         factorSum += index; 
+//     let factorSum = 0
+//     for(index = 1; index <= number; index += 1){
+//          factorSum += index; 
+//     }
+
+//     return factorSum;
+// }
+
+// console.log(factorSumNumber(5));
+
+// 7 - Crie uma função que receba uma string word e outra string ending . 
+// Verifique se a string ending é o final da string word. Considere que a 
+// string ending sempre será menor que a string word.
+
+function verificaFimPalavra(stringWord, stringEnd) {
+    let inversoPalavra = stringWord.split('').reverse().join('');
+    let inversoFimPalavra = stringEnd.split('').reverse().join('');
+    let result;
+
+    for (let index = 0; index < inversoFimPalavra.length; index += 1) {
+        if (inversoPalavra[index] !== inversoFimPalavra[index]) {
+            result = false;
+            break;
+        } else {
+            result = true;
+        }
     }
 
-    return factorSum;
+    return result;
 }
 
-console.log(factorNumber(5));
+
+console.log(verificaFimPalavra('trybe', 'be'));
+console.log(verificaFimPalavra('joaofernando', 'fernan'));
