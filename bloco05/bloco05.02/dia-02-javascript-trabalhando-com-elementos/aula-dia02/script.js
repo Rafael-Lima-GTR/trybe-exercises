@@ -12,6 +12,8 @@ const firstSonOfSon = elementoOndeVoceEsta.firstElementChild;
     firstSonOfSon.innerText = 'primeiroFilhoDoFilho';
 
 // 4 - Acesse o primeiroFilho a partir de pai.
+const firstSon = father.firstElementChild;
+
 // 5 - Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
 // 6 - Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta.
 // 7 - Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta.
