@@ -153,27 +153,62 @@ info['recorrente'] = 'Sim';
 
 // console.log(factorSumNumber(5));
 
-// 7 - Crie uma função que receba uma string word e outra string ending . 
-// Verifique se a string ending é o final da string word. Considere que a 
-// string ending sempre será menor que a string word.
+// // 7 - Crie uma função que receba uma string word e outra string ending . 
+// // Verifique se a string ending é o final da string word. Considere que a 
+// // string ending sempre será menor que a string word.
 
-function verificaFimPalavra(stringWord, stringEnd) {
-    let inversoPalavra = stringWord.split('').reverse().join('');
-    let inversoFimPalavra = stringEnd.split('').reverse().join('');
-    let result;
+// function verificaFimPalavra(stringWord, stringEnd) {
+//     let inversoPalavra = stringWord.split('').reverse().join('');
+//     let inversoFimPalavra = stringEnd.split('').reverse().join('');
+//     let result;
 
-    for (let index = 0; index < inversoFimPalavra.length; index += 1) {
-        if (inversoPalavra[index] !== inversoFimPalavra[index]) {
-            result = false;
-            break;
+//     for (let index = 0; index < inversoFimPalavra.length; index += 1) {
+//         if (inversoPalavra[index] !== inversoFimPalavra[index]) {
+//             result = false;
+//             break;
+//         } else {
+//             result = true;
+//         }
+//     }
+
+//     return result;
+// }
+
+
+// console.log(verificaFimPalavra('trybe', 'be'));
+// console.log(verificaFimPalavra('joaofernando', 'fernan'));
+
+//Bônus
+// 1 - (Difícil) Faça um programa que receba uma string em 
+// algarismos romanos e retorne o número que a string representa.
+
+const numerosRomanos = {
+    i: 1,
+    v: 5,
+    x: 10,
+    l: 50,
+    c: 100,
+    d: 500,
+    m: 1000,
+};
+
+function romanoParaDecimal(numero) {
+    numero = numero.toLowerCase();
+    const len = numero.length;
+    let soma = numerosRomanos[numero[len - 1]];
+    let atual = numerosRomanos[numero[len - 1]];
+    for (let i = 2; i <= len; i += 1) {
+        const prox = numerosRomanos[numero[len - i]];
+        if (atual <= prox) {
+            soma += prox;
         } else {
-            result = true;
+            soma -= prox;
         }
+        atual = prox;
     }
-
-    return result;
+    return soma;
 }
 
-
-console.log(verificaFimPalavra('trybe', 'be'));
-console.log(verificaFimPalavra('joaofernando', 'fernan'));
+console.log(romanoParaDecimal('MMXVIII')); // 2018
+console.log(romanoParaDecimal('VI')); // 6
+console.log(romanoParaDecimal('IV')); // 4
