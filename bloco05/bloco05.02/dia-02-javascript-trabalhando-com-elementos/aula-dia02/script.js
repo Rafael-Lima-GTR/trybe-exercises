@@ -12,9 +12,11 @@ const firstSonOfSon = elementoOndeVoceEsta.firstElementChild;
     firstSonOfSon.innerText = 'primeiroFilhoDoFilho';
 
 // 4 - Acesse o primeiroFilho a partir de pai.
-const firstSon = father.firstElementChild;
+let firstSon = father.firstElementChild;
 
 // 5 - Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
+firstSon = elementoOndeVoceEsta.previousElementSibling;
+
 // 6 - Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta.
 // 7 - Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta.
 // 8 - Agora acesse o terceiroFilho a partir de pai.
