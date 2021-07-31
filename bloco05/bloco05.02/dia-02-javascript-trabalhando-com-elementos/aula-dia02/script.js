@@ -4,6 +4,9 @@
 const elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
 
 // 2 - Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
+const father = elementoOndeVoceEsta.parentElement;
+    father.style.color = 'orange';
+
 // 3 - Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
 // 4 - Acesse o primeiroFilho a partir de pai.
 // 5 - Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
