@@ -35,6 +35,10 @@ brotherElementoOndeVoceEsta.id = 'irmaoElementoOndeVoceEsta';
 father.appendChild(irmaoElementoOndeVoceEsta); 
 
 // 2. Crie um filho para `elementoOndeVoceEsta`.
+const elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
+const sonOfElementoOndeVoceEsta = document.createElement('section');
+sonOfElementoOndeVoceEsta.id = 'filhoElementoOndeVoceEsta';
+elementoOndeVoceEsta.appendChild(sonOfElementoOndeVoceEsta);
 
 
 // 3. Crie um filho para `primeiroFilhoDoFilho`.
