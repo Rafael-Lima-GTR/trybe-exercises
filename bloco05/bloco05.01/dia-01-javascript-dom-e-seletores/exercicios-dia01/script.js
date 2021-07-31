@@ -18,5 +18,8 @@ const centerContent = document.getElementsByClassName('center-content')[0];
 centerContent.style.backgroundColor = 'rgb(255,255,255)';
 
 // 4. Crie uma função que corrija o texto da tag <h1>.
+const textCorrection = document.getElementsByClassName('title')[0];
+textCorrection.innerText = 'Exercício 5.1 - JavaScript';
+
 // 5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
 // 6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
