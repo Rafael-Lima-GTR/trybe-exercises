@@ -24,3 +24,4 @@ const textAcess = elementoOndeVoceEsta.nextSibling;
 let thirdSon = elementoOndeVoceEsta.nextElementSibling;
 
 // 8 - Agora acesse o terceiroFilho a partir de pai.
+thirdSon = father.children[2];
