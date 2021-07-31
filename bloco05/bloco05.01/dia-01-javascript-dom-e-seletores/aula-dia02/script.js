@@ -8,8 +8,14 @@ father.style.color = 'red';
 const firstSonOfSon = elementoOndeVoceEsta.firstElementChild;
 firstSonOfSon.innerText = "Texto do primeiroFilhoDoFilho";
 
-// 4 - Acesse o primeiroFilho a partir de pai .
-// 5 - Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta .
-// 6 - Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta .
+// 4 - Acesse o primeiroFilho a partir de pai.
+let firstSon = document.querySelector('#pai').firstElementChild;
+
+// 5 - Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
+firstSon = document.querySelector('#elementoOndeVoceEsta').previousElementSibling;
+
+// 6 - Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta.
+const acessText = document.querySelector('#elementoOndeVoceEsta').nextSibling;
+
 // 7 - Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta .
 // 8 - Agora acesse o terceiroFilho a partir de pai .
