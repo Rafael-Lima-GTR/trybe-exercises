@@ -9,11 +9,15 @@ mainCreateElement.className = 'main-content'
 document.body.appendChild(mainCreateElement);
 
 // 3 - Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
-const sectionCreateElement = document.createElement('section');
-sectionCreateElement.className = 'center-content';
-mainCreateElement.appendChild(sectionCreateElement);
+const sectionCenterCreateElement = document.createElement('section');
+sectionCenterCreateElement.className = 'center-content';
+mainCreateElement.appendChild(sectionCenterCreateElement);
 
 // 4 - Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+const paragraphCreateElement = document.createElement('p');
+paragraphCreateElement.innerHTML = 'Estudar JavaScript está sendo muito gratificante!!!';
+sectionCenterCreateElement.appendChild(paragraphCreateElement);
+
 // 5 - Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
 // 6 - Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
 // 7 - Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
