@@ -46,10 +46,8 @@ const numberWords = ['Um', 'Dois', 'Três', 'Quatro',
 
  for(let index in numberWords){
 
-    let listItem = numberWords[index]
-
     const liCreateElement = document.createElement('li');
-    liCreateElement.innerHTML = listItem;
+    liCreateElement.innerHTML = numberWords[index];
 
     ulCreateElement.appendChild(liCreateElement);
  }
