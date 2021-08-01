@@ -1,3 +1,4 @@
+// Parte 1
 // 1 - Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
 const h1CreateElement = document.createElement('h1');
 h1CreateElement.innerText = 'Exercício 5.2 - JavaScript DOM';
@@ -51,4 +52,10 @@ const numberWords = ['Um', 'Dois', 'Três', 'Quatro',
 
     ulCreateElement.appendChild(liCreateElement);
  }
+
 // 9 - Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+ for(index = 1; index <= 3; index += 1){
+
+    const h3CreateElement = document.createElement('h3');
+    mainCreateElement.appendChild(h3CreateElement);
+ }
