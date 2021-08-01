@@ -35,5 +35,22 @@ imgCreateElement.src = 'https://picsum.photos/200';
 imgCreateElement.className = 'small-image';
 sectionLeftCreateElement.appendChild(imgCreateElement);
 
-// 8 - Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+// 8 - Adicione uma lista não ordenada com os valores de 1 a 10 por extenso,
+// ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser
+// filha do section criado no passo 6;
+const ulCreateElement = document.createElement('ul');
+sectionRightCreateElement.appendChild(ulCreateElement);
+
+const numberWords = ['Um', 'Dois', 'Três', 'Quatro',
+ 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez']
+
+ for(let index in numberWords){
+
+    let listItem = numberWords[index]
+
+    const liCreateElement = document.createElement('li');
+    liCreateElement.innerHTML = listItem;
+
+    ulCreateElement.appendChild(liCreateElement);
+ }
 // 9 - Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
