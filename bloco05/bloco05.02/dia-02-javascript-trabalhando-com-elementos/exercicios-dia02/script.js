@@ -83,5 +83,7 @@ sectionRightCreateElement.style.marginRight = 'auto';
 sectionCenterCreateElement.parentElement.style.backgroundColor = 'green';
 
 // 6.Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
+ulCreateElement.lastChild.remove();
+ulCreateElement.lastChild.remove();
 
     
