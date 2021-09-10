@@ -5,16 +5,33 @@
 
 const factorial = number => {
     let result = number;
-    while (number > 2){
+    while (number > 2) {
         result *= --number;
     }
 
     return result;
 }
 
+console.log(factorial(0));
 console.log(factorial(1));
 console.log(factorial(2));
 console.log(factorial(3));
 console.log(factorial(4));
 console.log(factorial(5));
-console.log(factorial(6));
+
+// // Resolução através do for
+// const factorial = number => {
+//     let result = 1;
+
+//     for (let index = 2; index <= number; index += 1) {
+//         result *= index;
+//     }
+
+//     return result;
+// }
+
+// console.log(factorial(5));
+
+// // Resolução de forma recursiva
+// const factorial = number => number > 1 ? number * factorial(number - 1) : 1;
+// console.log(factorial(5));
