@@ -35,6 +35,8 @@
 
 const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 
+// Fonte de pesquisa: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 const ascendingOrder = (a, b) => a - b;
 
 console.log(`Os números ${oddsAndEvens.sort(ascendingOrder)} se encontram ordenados de forma crescente!`);
+// console.log(`Os números ${oddsAndEvens.sort((a, b) => a - b)} se encontram ordenados de forma crescente!`);
