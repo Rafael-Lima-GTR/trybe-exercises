@@ -37,4 +37,4 @@ const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 
 const ascendingOrder = (a, b) => a - b;
 
-console.log(`Os números ${oddsAndEvens.sort(ascendingOrder)} se encontram ordenados de forma crescente!`); // será necessário alterar essa linha 😉
+console.log(`Os números ${oddsAndEvens.sort(ascendingOrder)} se encontram ordenados de forma crescente!`);
