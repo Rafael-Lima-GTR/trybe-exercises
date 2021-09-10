@@ -1,3 +1,4 @@
+// PARTE 1
 // function testingScope(escopo) {
 //     if (escopo === true) {
 //       var ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
