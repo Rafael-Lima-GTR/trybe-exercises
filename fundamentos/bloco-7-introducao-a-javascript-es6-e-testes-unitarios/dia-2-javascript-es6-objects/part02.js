@@ -62,6 +62,22 @@ const getTotallyNUmberOfStudents = object => {
 
 console.log(getTotallyNUmberOfStudents(allLessons));
 
+// //Resolução feita pelo Isaac
+// const getStudentsTotal = lessons => {
+//     const keys = Object.keys(lessons);
+    
+//     let total = 0;
+
+//     for (let index = 0; index < keys.length; index += 1) {
+//         const currentKey = keys[index];
+//         total += lessons[currentKey].numeroEstudantes;
+//     }
+
+//     return total;
+// };
+
+// console.log(getStudentsTotal(allLessons));
+
 // 7. Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto. Por exemplo:
 // console.log(getValueByNumber(lesson1, 0));
 // Output: 'Matématica'
