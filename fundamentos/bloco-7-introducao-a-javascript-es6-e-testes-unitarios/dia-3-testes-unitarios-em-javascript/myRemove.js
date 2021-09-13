@@ -20,3 +20,4 @@ const myArray = [9, 10, 11, 12, 13];
 myRemove(myArray, 12);
 assert.deepStrictEqual(myArray, [9, 10, 11, 12, 13], 'O array não deve sofrer alterações');
 // 4. Verifique se a chamada myRemove([1, 2, 3, 4], 5) retorna o array esperado
+assert.deepStrictEqual(myRemove([1, 2, 3, 4], 5), [1, 2, 3, 4], 'Quando for passado um elemento inexistente é pra retornar o mesmo array!');
