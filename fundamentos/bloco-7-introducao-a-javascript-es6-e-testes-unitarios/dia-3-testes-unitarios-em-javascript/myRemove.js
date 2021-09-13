@@ -10,7 +10,7 @@ function myRemove(arr, item) {
   return newArr;
 }
 
-assert.strictEqual(typeof myRemove, 'function');
+assert.strictEqual(typeof myRemove, 'function','Não é uma função!');
 // 1. Verifique se a chamada myRemove([1, 2, 3, 4], 3) retorna o array esperado
 assert.deepStrictEqual(myRemove([1, 2, 3, 4], 3), [1, 2, 4], 'O elemento 3 é pra ser removido!');
 // 2. Verifique se a chamada myRemove([1, 2, 3, 4], 3) não retorna o array [1, 2, 3, 4]
