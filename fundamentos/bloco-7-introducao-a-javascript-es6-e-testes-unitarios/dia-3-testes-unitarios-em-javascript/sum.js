@@ -8,6 +8,7 @@ function sum(a, b) {
     return a + b;
 }
 
+assert.strictEqual(typeof sum, 'function');
 // 1. Teste se o retorno de sum(4, 5) é 9
 assert.strictEqual(sum(4, 5), 9, 'Quatro mais cinco é igual a nove!');
 // 2. Teste se o retorno de sum(0, 0) é 0
