@@ -1,0 +1,1 @@
+const numberChecker = (myNumber, number) => myNumber === number;
