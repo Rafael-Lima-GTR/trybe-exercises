@@ -66,11 +66,11 @@ const books = [
 // O array deve ser ordenado por idade, ou seja, da pessoa mais jovem para a mais velha considerando suas idades quando o livro foi lançado.
      
 // Adicione o código do exercício aqui:
-const authorList = books.map((book)=> (
+const nameAndAge = books.map((book)=> (
     {
         age: (book.releaseYear - book.author.birthYear),
         author: book.author.name,
     })).sort((objA, objB) => objA.age - objB.age);
 
-console.log(authorList);
+console.log(nameAndAge);
 
