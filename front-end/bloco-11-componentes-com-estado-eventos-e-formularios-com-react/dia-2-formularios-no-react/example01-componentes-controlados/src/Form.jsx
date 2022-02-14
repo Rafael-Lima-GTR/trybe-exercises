@@ -7,14 +7,19 @@ class Form extends Component {
     this.handleChange = this.handleChange.bind(this);
 
     this.state = {
-      name: '',
+      city: '',
+      fullName: '',
+      email: '',
+      resume: '',
     };
   }
 
 
-  handleChange(event) {
+  handleChange({ target }) {
+    const { name, value } = target
+
     this.setState({
-      name: event.target.value,
+      [name]: value,
     });
   }
 
@@ -28,7 +33,10 @@ class Form extends Component {
 
           <label htmlFor="city">
             Choose the city:
-            <select id="city" name="city" defaultValue="">
+            <select id="city" name="city"
+              defaultValue=""
+              value={name}
+              onChange={this.handleChange}>
               <option value="fortaleza">Fortaleza</option>
               <option value="rioDeJaneiro">Rio de Janeiro</option>
               <option value="saoPaulo">São Paulo</option>
@@ -42,7 +50,7 @@ class Form extends Component {
               id="fullName"
               type="text"
               name="fullName"
-              value={ name }
+              value={name}
               onChange={this.handleChange} />
           </label>
 
@@ -52,12 +60,16 @@ class Form extends Component {
               id="email"
               name="email"
               type="email"
+              value={name}
+              onChange={this.handleChange}
             />
           </label>
 
           <label>
             Fale um pouco mais sobre você.
-            <textarea name="resume" />
+            <textarea name="resume"
+              value={name}
+              onChange={this.handleChange} />
           </label>
 
 
