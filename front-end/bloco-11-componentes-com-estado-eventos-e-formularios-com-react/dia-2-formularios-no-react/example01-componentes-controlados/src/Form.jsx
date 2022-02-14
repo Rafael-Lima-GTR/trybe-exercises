@@ -7,17 +7,19 @@ class Form extends Component {
     this.handleChange = this.handleChange.bind(this);
 
     this.state = {
-      city: '',
+      city: 'fortaleza',
       fullName: '',
       email: '',
       resume: '',
+      comparecer: false
     };
   }
 
 
   handleChange({ target }) {
-    const { name, value } = target
-
+    const { name } = target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+  
     this.setState({
       [name]: value,
     });
@@ -72,8 +74,16 @@ class Form extends Component {
               onChange={this.handleChange} />
           </label>
 
-
-
+          <label>
+            Deseja participar do evento?
+            <input
+              id="comparecer"
+              name="comparecer"
+              type="checkbox"
+              value={name}
+              onChange={this.handleChange}
+            />
+          </label>
 
         </form>
       </div>
