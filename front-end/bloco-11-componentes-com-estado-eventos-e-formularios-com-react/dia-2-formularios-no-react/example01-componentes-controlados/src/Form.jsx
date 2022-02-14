@@ -5,6 +5,7 @@ class Form extends Component {
     super();
 
     this.handleChange = this.handleChange.bind(this);
+    this.fileInput = React.createRef
 
     this.state = {
       city: 'fortaleza',
@@ -19,7 +20,7 @@ class Form extends Component {
   handleChange({ target }) {
     const { name } = target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
-  
+
     this.setState({
       [name]: value,
     });
@@ -84,6 +85,13 @@ class Form extends Component {
               onChange={this.handleChange}
             />
           </label>
+
+          <label>
+            Upload file:
+            <input type="file" ref={this.fileInput} />
+          </label>
+          <br />
+          <button type="submit">Submit</button>
 
         </form>
       </div>
